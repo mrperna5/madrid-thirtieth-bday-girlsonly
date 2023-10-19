@@ -1,0 +1,42 @@
+.attractions-container {
+  display: flex;
+  flex-direction: column;  /* Stack children vertically */
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;               /* Uniform gap between all child elements */
+  margin-top: 30px;
+}
+
+.castilla {
+  font-family: 'British Castilla', cursive;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between each item */
+  /*margin-left: 30px;*/
+}
+
+.menu-items li::before {
+  content: '';           /* Resets the content so it doesn't display the default bullet */
+  display: inline-block;
+  height: 16px;         /* Height of your image */
+  width: 16px;          /* Width of your image */
+  background-image: url('../../../assets/bulletpoint.png'); /* Replace with your image path */
+  background-size: cover;
+  margin-right: 5px;   /* Spacing between the image and the text */
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.item {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+

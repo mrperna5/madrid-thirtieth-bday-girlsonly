@@ -1,0 +1,30 @@
+.home-container {
+  display: flex;
+  flex-direction: column;  /* Stack children vertically */
+  align-items: center;     /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically */
+  gap: 60px;               /* Uniform gap between all child elements */
+  margin-top: 10px;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+}
+
+#madrid {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+#girlstrip {
+  align-self: flex-start;
+}
+
+.event-details {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 12px;
+  line-height: 1.5; /* Add some line-height for better readability */
+}

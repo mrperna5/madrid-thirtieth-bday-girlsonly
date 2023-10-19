@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Take up the full viewport height */
+  width: 100vw;
+  align-items: center;
+}
+
+.content {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 100%;
+  max-width: 1200px;
+  overflow-y: auto;
+}
+
+.didot {
+  font-family: 'Didot', serif;
+  font-size: 32px;
+}
+
+.castilla {
+  font-family: 'British Castilla', cursive;
+  font-size: 72px;
+}
+
+.header, .footer {
+  width: 100%;
+  max-width: 1200px; /* Consistent with the content width */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Ensure images are centered */
+}
+
+.header {
+  background-image: url('assets/header.png');
+  height: 15vh; /* Increased height for desktop */
+}
+
+.footer {
+  background-image: url('assets/footer.png');
+  height: 15vh; /* Increased height for desktop */
+}
+
+/* ... other styles ... */
+
+@media screen and (max-width: 768px) {
+  .header, .footer {
+    height: 20vh;
+  }
+}
+
+  @media screen and (max-width: 320px) {
+    /* Styles for smaller screens like iPhone 5/SE */
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    /* Styles for medium-sized screens like most smartphones */
+  }
+
+
+  /**~~~~~~~* Fonts *~~~~~~**/
+  @font-face {
+    font-family: 'Didot';
+    src: url('assets/fonts/GFSDidot-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'British Castilla';
+    src: url('assets/fonts/BritishCastillaScript-VGg8x.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display Italic';
+    src: url('assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
